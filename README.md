@@ -5,6 +5,12 @@ Fast, zero-config CSV reader in one source file that can be included in a .Net P
 
 Based on my CSV Reader initially posted to this Stack Overflow question:  
 http://stackoverflow.com/a/1544743/3043
+What sets this CSV reader apart:
+
+1. You can point it at any csv stream without knowing what kind of records the stream contains, and it will return nice data
+2. It
+
+
 
 Just include EasyCSV.cs in your CSharp Project
 
