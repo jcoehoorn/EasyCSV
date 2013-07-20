@@ -21,13 +21,13 @@ Just include EasyCSV.cs in your CSharp Project, and let Intellisense tell you ho
 .1 Initial upload  
 .2 Add Visual Studio solution with Unit Tests  
 .3 Convert to inherit from TextReader  
-.4 Add better support for header rows  
-.5 Add support for projecting records to a POCO instead of a List<string> (can do this now, but it would waste work done creating the list)  
-.6 Add options: delimiter, error handling, escaping, more  
-.7 Initial write support   
-.8 Documentation   
-.9 Performance optimizations  
-1.0 Bug squash  
+.4 NuGet Package  
+.5 Add better support for header rows  
+.6 Add support for projecting records to a POCO instead of a List<string> (can do this now, but it would waste work done creating the list)  
+.7 Add options: delimiter, error handling, escaping, more  
+.8 Initial write support   
+.9 Documentation   
+1.0  Performance optimizations    
 
 1.1 VB.Net Translation  
 1.2 F# Translation
