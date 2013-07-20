@@ -1,10 +1,12 @@
-EasyCSV
+EasyCSV v0.1
 =======
 
 Fast, zero-config CSV reader in one source file that can be included in a .Net Project
 
-Based on my CSV Reader initially posted to this Stack Overflow question:
+Based on my CSV Reader initially posted to this Stack Overflow question:  
 http://stackoverflow.com/a/1544743/3043
+
+Just include EasyCSV.cs in your CSharp Project
 
 Roadmap to 1.0:
 
@@ -15,3 +17,5 @@ Roadmap to 1.0:
 .5 Add support for projecting records to a POCO instead of a List<string>  
 .6 Initial write support  
 .7 Refine write support
+
+1.1 VB.Net Translation
