@@ -1,11 +1,6 @@
 public static class EasyCSV
 {
-    public static IEnumerable<IList<string>> FromFile(string fileName)
-    {
-        foreach (IList<string> item in FromFile(fileName, ignoreFirstLineDefault)) yield return item;
-    }
-
-    public static IEnumerable<IList<string>> FromFile(string fileName, bool ignoreFirstLine)
+    public static IEnumerable<IList<string>> FromFile(string fileName, bool ignoreFirstLine=false)
     {
         using (StreamReader rdr = new StreamReader(fileName))
         {
@@ -13,12 +8,7 @@ public static class EasyCSV
         }
     }
 
-    public static IEnumerable<IList<string>> FromStream(Stream csv)
-    {
-        foreach (IList<string> item in FromStream(csv, ignoreFirstLineDefault)) yield return item;
-    }
-
-    public static IEnumerable<IList<string>> FromStream(Stream csv, bool ignoreFirstLine)
+    public static IEnumerable<IList<string>> FromStream(Stream csv, bool ignoreFirstLine=false)
     {
         using (var rdr = new StreamReader(csv))
         {
@@ -26,13 +16,7 @@ public static class EasyCSV
         }
     }
 
-    public static IEnumerable<IList<string>> FromReader(TextReader csv)
-    {
-        //Probably should have used TextReader instead of StreamReader
-        foreach (IList<string> item in FromReader(csv, ignoreFirstLineDefault)) yield return item;
-    }
-
-    public static IEnumerable<IList<string>> FromReader(TextReader csv, bool ignoreFirstLine)
+    public static IEnumerable<IList<string>> FromReader(TextReader csv, bool ignoreFirstLine=false)
     {
         if (ignoreFirstLine) csv.ReadLine();
 
@@ -102,5 +86,4 @@ public static class EasyCSV
             yield return result;
 
     }
-    private static bool ignoreFirstLineDefault = false;
 }
