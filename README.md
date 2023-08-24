@@ -6,7 +6,7 @@ Fast, zero-config CSV reader in one source file that can be included in a C# Pro
 Based on my CSV Reader initially posted to this Stack Overflow question:  
 http://stackoverflow.com/a/1544743/3043
 
-####What sets this CSV reader apart:
+#### What sets this CSV reader apart:
 
 1. Point it at any csv stream without knowing what kind of records the stream contains, and it will return nice data.  
 Most current readers want you to tell your object up front what you expect in the CSV data, and will throw errors if the content is different.  
@@ -16,7 +16,7 @@ Most current readers want you to tell your object up front what you expect in th
 
 Just include EasyCSV.cs in your CSharp Project, and let Intellisense tell you how to use it.
 
-####Roadmap Milestones for 1.0:
+#### Roadmap Milestones for 1.0:
 
 .1 Initial upload  
 .2 Add Visual Studio solution with Unit Tests  
